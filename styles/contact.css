@@ -1,0 +1,37 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.bg-cold-header {
+  background-color: #007bff;
+}
+
+.bg-cold-footer {
+  background-color: #0056b3;
+}
+
+#contactForm button {
+  transition: all 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #ff3366;
+  border-color: #ff3366;
+}
+
+.img-fluid.animated.zoom {
+  animation: zoom 3s infinite alternate;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

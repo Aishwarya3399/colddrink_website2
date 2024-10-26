@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="#"><img src="./assets/logo.png" class="logo" alt="Logo" /></a>
+        <div class="hamburger" id="hamburger">
+          <!-- Hamburger icon (three lines) -->
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul id="navMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/product.html">Products</a></li>
+          <li><a href="./pages/About.html">About Us</a></li>
+          <li><a href="./pages/Gallery.html">Gallery</a></li>
+          <li><a href="./pages/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="sec">
+      <div class="content">
+        <div class="textBox">
+          <h2>That's What<br /><span>I Like</span></h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            nobis numquam. Numquam pariatur vitae perferendis, quasi, quos
+            deleniti delectus voluptates aliquam nam, cum ducimus a dignissimos
+            iure veritatis laborum illo.
+          </p>
+          <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+          <img
+            src="./assets/orange (4).jpeg"
+            class="pepsi"
+            alt="Featured Product"
+          />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="./assets/orange (4).jpeg"
+            alt="Thumbnail 1"
+            onclick="imgSlider('orange (4).jpeg'); changeBgColor('#0062be')"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/orange (2).jpeg"
+            alt="Thumbnail 2"
+            onclick="imgSlider('orange (2).jpeg'); changeBgColor('#e60c2c')"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/orange (8).jpeg"
+            alt="Thumbnail 3"
+            onclick="imgSlider('orange (8).jpeg'); changeBgColor('#1e1e1e')"
+          />
+        </li>
+      </ul>
+
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="./assets/facebook.png" alt="Facebook" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/twitter.png" alt="Twitter" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/instagram.png" alt="Instagram" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="carousel-container">
+      <button class="arrow left-arrow" onclick="changeDirection('left')">
+        &#10094;
+      </button>
+      <div class="carousel">
+        <div class="carousel-content" id="carouselContent">
+          <!-- Duplicate the content for infinite scrolling effect -->
+          <div class="item">
+            <img
+              src="./assets/orange (14).jpeg"
+              alt="Coca-Cola"
+              class="circle-image"
+            />
+            <h1 class="image-title">Coca-Cola</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (15).jpeg"
+              alt="Sprite"
+              class="circle-image"
+            />
+            <h1 class="image-title">Sprite</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (16).jpeg"
+              alt="Fanta"
+              class="circle-image"
+            />
+            <h1 class="image-title">Fanta</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (17).jpeg"
+              alt="Pepsi"
+              class="circle-image"
+            />
+            <h1 class="image-title">Pepsi</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (18).jpeg"
+              alt="Mountain Dew"
+              class="circle-image"
+            />
+            <h1 class="image-title">Mountain Dew</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (2).jpeg"
+              alt="7 Up"
+              class="circle-image"
+            />
+            <h1 class="image-title">7 Up</h1>
+          </div>
+          <!-- Duplicate set for infinite effect -->
+          <div class="item">
+            <img
+              src="./assets/orange (14).jpeg"
+              alt="Coca-Cola"
+              class="circle-image"
+            />
+            <h1 class="image-title">Coca-Cola</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (15).jpeg"
+              alt="Sprite"
+              class="circle-image"
+            />
+            <h1 class="image-title">Sprite</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (16).jpeg"
+              alt="Fanta"
+              class="circle-image"
+            />
+            <h1 class="image-title">Fanta</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (17).jpeg"
+              alt="Pepsi"
+              class="circle-image"
+            />
+            <h1 class="image-title">Pepsi</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (18).jpeg"
+              alt="Mountain Dew"
+              class="circle-image"
+            />
+            <h1 class="image-title">Mountain Dew</h1>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/orange (2).jpeg"
+              alt="7 Up"
+              class="circle-image"
+            />
+            <h1 class="image-title">7 Up</h1>
+          </div>
+        </div>
+      </div>
+      <button class="arrow right-arrow" onclick="changeDirection('right')">
+        &#10095;
+      </button>
+    </div>
+
+    <div class="about-section mt-5 text-center">
+      <div class="container">
+        <h2 class="animate__animated animate__fadeInUp">About CoolDrink</h2>
+        <p class="mt-3 animate__animated animate__fadeInUp">
+          CoolDrink is all about bringing refreshing beverages that keep you
+          cool, hydrated, and happy. Our drinks are made from natural
+          ingredients and carefully crafted to give you the ultimate refreshment
+          experience. We believe in quality and taste with every sip.
+        </p>
+        <button
+          class="btn btn-custom mt-3 animate__animated animate__pulse animate__infinite"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Highlights -->
+    <div class="container mt-5 text-center">
+      <h2 class="mb-4">Our Popular Drinks</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft">
+          <img
+            src="./assets/orange (10).jpeg"
+            class="img-fluid rounded-circle mb-3"
+            alt="Cool Cola"
+          />
+          <h5>Cool Cola</h5>
+          <p>A classic drink with a taste that never goes out of style.</p>
+        </div>
+        <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+          <img
+            src="./assets/orange (11).jpeg"
+            class="img-fluid rounded-circle mb-3"
+            alt="Lemon Fizz"
+          />
+          <h5>Lemon Fizz</h5>
+          <p>Crisp, refreshing, and perfect for every occasion.</p>
+        </div>
+        <div class="col-md-4 mb-4 animate__animated animate__fadeInRight">
+          <img
+            src="./assets/orange (1).jpeg"
+            class="img-fluid rounded-circle mb-3"
+            alt="Orange Splash"
+          />
+          <h5>Orange Splash</h5>
+          <p>A fruity and zesty drink that brightens up your day.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <section1 class="features-section text-center">
+      <div class="container">
+        <h2>Why Choose Us?</h2>
+        <div class="row mt-5">
+          <div class="col-md-4 features">
+            <img src="./assets/quality.jpg" alt="Quality" class="mb-3" />
+            <h5>Premium Quality</h5>
+            <p>
+              Only the finest ingredients go into making our drinks, ensuring
+              quality in every drop.
+            </p>
+          </div>
+          <div class="col-md-4 features">
+            <img src="./assets/taste.jpeg" alt="Taste" class="mb-3" />
+            <h5>Unmatched Taste</h5>
+            <p>
+              Our drinks are designed to tantalize your taste buds and give you
+              a delightful experience.
+            </p>
+          </div>
+          <div class="col-md-4 features">
+            <img src="./assets/natural.jpeg" alt="Natural" class="mb-3" />
+            <h5>Natural Ingredients</h5>
+            <p>
+              We use natural ingredients without any artificial additives or
+              preservatives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section1>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>
+            We are dedicated to bringing you the freshest and most refreshing
+            cold drinks. Stay cool and hydrated with our premium selections.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./About Us.html">About Us</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-address">
+          <h3>Our Address</h3>
+          <p>Coldrink Company</p>
+          <p>123 Refreshment Street</p>
+          <p>Beverage City, BC 54321</p>
+          <p>Phone: +1 234 567 890</p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="#"><img src="./assets/face.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/twit.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/insta.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/youtube.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Coldrink Company. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

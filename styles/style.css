@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  /* position: relative; */
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0062be;
+  transition: 0.5s;
+}
+.sec {
+  background: #0062be; /* Default background color */
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textBox {
+  max-width: 600px;
+}
+
+.textBox h2 {
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.textBox h2 span {
+  font-size: 2em;
+}
+
+.textBox p {
+  color: #fff;
+}
+
+.textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #fff;
+  color: #111;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.imgBox img {
+  max-width: 260px;
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+
+.thumb li img {
+  max-width: 40px;
+  border-radius: 50%;
+}
+
+.sci {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items */
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  filter: invert(1);
+  margin: 5px 0;
+  transform: scale(0.6);
+}
+
+.carousel-container {
+  margin-top: 2.5rem;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-content {
+  display: flex;
+  animation: scroll-left 30s linear infinite; /* Slower speed */
+}
+
+.item {
+  display: inline-block;
+  margin: 0 20px; /* Increased margin for spacing */
+  text-align: center;
+}
+
+.circle-image {
+  width: 300px; /* Larger image size for visibility */
+  height: 300px; /* Larger image size for visibility */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.circle-image:hover {
+  transform: scale(1.1);
+}
+
+.image-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.about-section {
+  background-color: #ffeaa7;
+  padding: 40px 0;
+}
+
+.about-section h2 {
+  font-weight: 600;
+}
+
+.features-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.features-section h2 {
+  font-weight: 600;
+}
+
+.testimonial-section {
+  padding: 40px 0;
+  background-color: #f76c6c;
+  color: #fff;
+}
+
+.testimonial-section h2 {
+  font-weight: 600;
+}
+
+.testimonial-item {
+  border: 2px solid #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn-custom {
+  background-color: #f76c6c;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #ff867c;
+  color: #fff;
+}
+
+.features img {
+  width: 10rem;
+  height: 10rem;
+}
+
+@media (max-width: 600px) {
+  .sec {
+    padding: 50px 20px;
+  }
+  .content .textBox h2 {
+    font-size: 1.8rem; /* Smaller font size for headings on mobile */
+  }
+  .imgBox img {
+    width: 100%; /* Scale down images on mobile */
+  }
+  .carousel .item {
+    width: 100vw; /* Full-width for carousel items on mobile */
+  }
+}
+.about-section,
+.footer-container {
+  text-align: center;
+}
+.footer-container ul {
+  display: flex;
+  flex-direction: column; /* Stack footer links on mobile */
+  align-items: center;
+}
+/* Mobile view (up to 575px) */
+@media (max-width: 600px) {
+  /* Adjust header padding and font sizes */
+  header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .logo-container li {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .content .imgBox {
+    width: 100%;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .content .textBox h2 {
+    font-size: 2rem;
+  }
+
+  .imgBox img.pepsi {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  /* Carousel adjustment */
+  .carousel .item {
+    min-width: 100%;
+  }
+
+  /* Footer adjustments */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container div {
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet view (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Adjust header layout */
+  header {
+    padding: 20px 50px;
+  }
+
+  .logo-container ul {
+    margin-top: 10px;
+    flex-direction: row;
+  }
+
+  .content {
+    padding: 50px;
+  }
+
+  .content .textBox h2 {
+    font-size: 2.5rem;
+  }
+
+  .imgBox img.pepsi {
+    width: 70%;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-container div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Desktop (768px and up) */
+@media (min-width: 768px) {
+  /* No changes needed for larger screens */
+}
